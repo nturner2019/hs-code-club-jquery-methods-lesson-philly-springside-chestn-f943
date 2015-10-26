@@ -1,23 +1,23 @@
 $(document).ready(function(){
 
   $('#chair').click(function(){
-      $('.blue-chair').append("<img src='images/blue-chair.png'>");
+      //code solution here
   });
 
   $('#couch').click(function(){
-      $('.couch').append("<img src='images/couch.png'>");
+    //code solution here
   });
 
   $('#chandelier').click(function(){
-    $('.chandelier').append("<img src='images/chandelier.png'>");
+  //code solution here
   });
 
   $('#frame-art').click(function(){
-    $('#art').addClass('frame-art');
-  })
+  //code solution here
+  });
 
   $('#eat-pizza').click(function(){
-    $('#pizza').toggle();
+    //code solution here
   });
 
   $('#add-tv').click(function(){
