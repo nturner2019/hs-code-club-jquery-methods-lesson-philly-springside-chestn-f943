@@ -21,11 +21,11 @@ $(document).ready(function(){
   });
 
   $('#add-tv').click(function(){
-    $('.tv').append("<img src='images/off-tv.png'>");
+    //code solution here
   });
 
   $('#watch-tv').click(function(){
-    $('.tv img').replaceWith("<img src='images/tv.png'>");
+    //code solution here
   });
 
 
