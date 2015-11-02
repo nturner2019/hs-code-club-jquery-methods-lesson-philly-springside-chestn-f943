@@ -1,27 +1,97 @@
-# Room Decorator
+# Room Decorator with jQuery Methods
 
 <img src="https://s3.amazonaws.com/after-school-assets/decorate.jpg" width="300px" align="right" hspace="10">
 
-You just moved into a brand new home and it's time to decorate!! That's always the best part. And then once you're all moved in, time to enjoy your new crib.
+Now that you're a jQuery selector pro, it's time to dive into jQuery methods. Methods are a pre-defined set of instructions defined in jQuery that the browser can understand and follow. Sometimes you might here the word `function` used in place of `method`. They're synonyms and can be used interchangeably. 
 
-##Let's Get Started
+You just moved into a brand new place and it's time to decorate!
 
-We've set up the `click` functions for you, but your job is to fill in the rest.
 
-You'll be coding your solution in `js/decorate.js`. You'll want to open up `index.html` in both the browser and the text editor. You shouldn't need to make any changes to `index.html` in order to code your solution. Don't worry about the code in `css/style.css`. All the styling has be written for you, and will work perfectly if you don't change the HTML.
+## Let's Get Started
 
-**Step 1:** When a user clicks the button `Add Chair`, the `blue-chair.png` should appear on the screen. You'll need to use the `append` function to add the HTML to put the image on the page to the div with the class `chair`.
+### Step 1:
 
-**Step 2:** When a user clicks the button `Add Couch`, the `couch.png` image should appear on the screen. Again, you'll want to use the `append` function to add the HTML for the image to the div with the class `couch`.
+Click `Open` at the top of this page to bring this lesson down so you can edit files in Nitrous.
 
-**Step 3:** When a user clicks the button `Add Chandelier`, the `chandelier.png` image should appear in the house. You'll need to use the `append` function to add the HTML to put the image on the page to the div with the class `chandelier`.
+<img src="https://s3.amazonaws.com/after-school-assets/new-open-in-nitrous.png">
 
-**Step 4:** When a user clicks the `Frame Art` button, a 5 pixel wide orange frame should go around the art on the wall. You'll want to use the `addClass` function to add the class `frame-art` to the image with the ID `art`.
+### Step 2:
 
-**Step 5:** We all like to eat a lot of pizza. When a user clicks the `Eat Pizza` button, the box of pizza should disappear, and when the button is clicked again, the pizza should reappear. You'll want to use the `toggle` function on the image with the ID `pizza`.
+Open `index.html` in the browser by running in terminal `python -m SimpleHTTPServer 3000`. 
 
-**Step 6:**  When a user clicks the button `Add TV`, the `off-tv.png` image should appear in the house. You'll need to use the `append` function to add the HTML to put the image on the page to the div with the class `chandelier`.
+Once you have the server running, select `preview` and then `port 3000`.
 
-**Step 6:**  When a user clicks the button `Watch TV`, the `tv.png` image should appear in the house instead of the `off-tv.png`. You'll need to use the `replaceWith` function on the image inside the `div` with the class `tv`to replace the images.
+<img src="https://s3.amazonaws.com/after-school-assets/nitrous-preview.png" alt="nitrous preview">
 
-Done and done! 
+
+### Step 3:
+
+You're going to code your solution in `js/decorate.js`. Go ahead and open that file in the Nitrous text editor, as well as `index.html`. You shouldn't need to make any changes to `index.html` in order to code your solution. Don't worry about the code in `css/style.css`. All the styling has be written for you, and will work perfectly if you don't change the HTML.
+
+In `js/decorate.js`, we've set up the jQuery selectors and `click` functions for you, but your job is to fill in the rest.
+
+### Step 4:
+
+Take a look at `index.html` in the browser. You should see something like this:
+
+<img src="https://s3.amazonaws.com/after-school-assets/empty-room.png">
+
+Your job is to write the code that will trigger the actions the buttons take. 
+
+### Step 5:
+
+Let's tackle the `Add Chair` button. When you click this button, we should see the `blue-chair.png` image (located in the images directory) appear on the screen.
+
+If you take a look at `index.html` in the Nitrous text editor, you see a `div` where we'll want the code for the chair to go. 
+
+```html
+<div class="blue-chair">
+</div>
+```
+
+But we're not going to directly edit `index.html` ourselves. Instead, we're going to use the jQuery `append` method. This method does exactly what it seems, it appends, or adds HTML elements to an HTML file. JQuery knows what file to add to based on what HTML file it's linked to. You'll notice that `js/decorate.js` is linked to `index.html` at the bottom of the HTML file.
+
+The append method needs one piece of information in order to do its job, what HTML you want to add to the file. In this case, because we want to put an image on the page, we want the follow HTML added to the index file:
+
+```html
+<img src="images/blue-chair.png">
+```
+
+So now to finish out the jQuery, copy the following code and paste it below the comment `//code solution to put the blue chair in index.html`:
+
+```js
+$('.blue-chair').append("<img src='images/blue-chair.png'>");
+```
+
+What this code is saying is when we click the HTML element with the ID chair (in this case the button that says `Add Chair`), we'll add the HTML image to the HTML with the class `blue-chair`, which in this case is a `div`. 
+
+Save your changes to `js/decorate.js` and refresh the page in the browser. Click the `Add Chair` button and watch the chair appear!
+
+### Step 6:
+
+Now let's tackle the couch! We're going to follow a very similar pattern as the chair.
+
+We want the couch to appear in the HTML where we see:
+
+```html
+<div class="couch">
+</div>
+```
+
+In this case, we want the following HTML added (or appended) to that div:
+
+```html
+<img src="images/couch.png">
+```
+
+Copy the following jQuery and paste it in `js/decorate.js` below the comment `//code solution here to put the couch in index.html`:
+
+```js
+$('.couch').append("<img src='images/couch.png'>");
+```
+Altogether, this code allows the user to click the button with the ID `couch`. When that happens, we add the `img` tag inside the `div` with the class `couch`. 
+
+Save your changes to `js/decorate.js` and refresh the page in the browser. Click the `Add Couch` button. Note, you won't see the chair until you click the `Add Chair` button too!
+
+
+
