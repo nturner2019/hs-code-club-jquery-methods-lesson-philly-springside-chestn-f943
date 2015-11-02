@@ -51,6 +51,16 @@ If you take a look at `index.html` in the Nitrous text editor, you see a `div` w
 
 But we're not going to directly edit `index.html` ourselves. Instead, we're going to use the jQuery `append` method. This method does exactly what it seems, it appends, or adds HTML elements to an HTML file. JQuery knows what file to add to based on what HTML file it's linked to. You'll notice that `js/decorate.js` is linked to `index.html` at the bottom of the HTML file.
 
+Because the browser first loads `index.html`, we link our all external files to the HTML file, and not the other way around. At the bottom of `index.html`, you'll see the lines:
+
+```html
+<script src="js/decorate.js"></script>
+```
+
+The jQuery file (`js/decorate.js`) knows to append any HTML to that particular file. We haven't linked our `js/decorate.js` file to any other HTML files so the jQuery we write will only effect `index.html`.
+
+In this case, were adding an img tag to index.html
+
 The append method needs one piece of information in order to do its job, what HTML you want to add to the file. In this case, because we want to put an image on the page, we want the follow HTML added to the index file:
 
 ```html
