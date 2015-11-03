@@ -17,7 +17,7 @@ $(document).ready(function(){
   });
 
   $('#eat-pizza').click(function(){
-    //code solution here to make the pizza disappear
+    //code solution here to make the pizza disappear and reappear
   });
 
   $('#add-tv').click(function(){
