@@ -4,8 +4,7 @@
 
 Now that you're a jQuery selector pro, it's time to dive into jQuery methods. Methods are a pre-defined set of instructions defined in jQuery that the browser can understand and follow. Sometimes you might here the word `function` used in place of `method`. They're synonyms and can be used interchangeably. 
 
-You just moved into a brand new place and it's time to decorate!
-
+Now, it's time to get excited: You just moved into a brand new place and it's time to decorate!
 
 ## Let's Get Started
 
@@ -67,7 +66,7 @@ The append method needs one piece of information in order to do its job, what HT
 <img src="images/blue-chair.png">
 ```
 
-So now to finish out the jQuery, copy the following code and paste it below the comment `//code solution to put the blue chair in index.html`:
+So now to finish out the jQuery, copy the following code and paste it below the comment `//code solution to put the blue chair` in index.html:
 
 ```js
 $('.blue-chair').append("<img src='images/blue-chair.png'>");
@@ -75,7 +74,9 @@ $('.blue-chair').append("<img src='images/blue-chair.png'>");
 
 What this code is saying is when you click the HTML element with the ID chair (in this case the button that says `Add Chair`), we'll add the HTML image to the HTML with the class `blue-chair`, which in this case is a `div`. 
 
-Save your changes to `js/decorate.js` and refresh the page in the browser. Click the `Add Chair` button and watch the chair appear!
+Save your changes to `js/decorate.js` and refresh the page in the browser. Click the `Add Chair` button and watch the chair appear! If you want to see it again, refresh anytime to re-set the room to empty.
+
+If you keep clicking the button, you will see multiple chairs appear. Once you finish all the buttons, you'll only want to click the `Add Chair` button once to decorate properly.
 
 ### Step 6:
 
@@ -214,17 +215,18 @@ Here, you're using the selector `.tv img`, which is selecting an image with the 
 
 Save your changes to `js/decorate.js` and refresh in the browser. Test all the buttons this time. Make sure you click `Add TV` before you click `Watch TV`, and enjoy your new living room!
 
+## Share Share Share!
+Show of your work by taking a screenshot of your filled treasure box or code and share with **\#flatironcodeclub** and **\#jQueryDecorator**
+
+
+## Reminder 
+
+Don't forget to shut down your server by hitting `control` and `c` before you move on to other material!
 
 ## Done and Done
 
 Lastly, you need to enter in terminal in Nitrous `learn submit`. This command will push your work to GitHub and mark this lesson as complete in Learn!
 
-## Share Share Share!
-Show of your work by taking a screenshot of your filled treasure box or code and share with **\#flatironcodeclub** and **\#jQueryDecorator**
-
-## Reminder 
-
-Don't forget to shut down your server by hitting `control` and `c` before you move on to other material!
 
 
 
