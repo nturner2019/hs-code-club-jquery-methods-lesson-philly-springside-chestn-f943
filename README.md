@@ -230,3 +230,5 @@ Lastly, you need to enter in terminal in Nitrous `learn submit`. This command wi
 
 
 
+
+<a href='https://learn.co/lessons/hs-code-club-jquery-methods-lesson' data-visibility='hidden'>View this lesson on Learn.co</a>
