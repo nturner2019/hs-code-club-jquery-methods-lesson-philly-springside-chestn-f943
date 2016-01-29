@@ -231,4 +231,4 @@ Lastly, you need to enter in terminal in Nitrous `learn submit`. This command wi
 
 
 
-<a href='https://learn.co/lessons/hs-code-club-jquery-methods-lesson' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/hs-code-club-jquery-methods-lesson' title='Room Decorator with jQuery Methods'>Room Decorator with jQuery Methods</a> on Learn.co and start learning to code for free.</p>
